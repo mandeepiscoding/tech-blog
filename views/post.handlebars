@@ -1,0 +1,26 @@
+{{#if loggedIn}}
+<section class="card">
+    <div class="card-header">
+        <div class="post-header">{{postData.title}}</div>
+        <div class="post-info">Posted by {{postData.user.username}} on {{format_date postData.createdAt}}</div>
+    </div>
+    <p class="card=body">{{postData.body}}</p>
+</section>
+<section class="card">
+    {{#if comment.body}}
+        <p class="card=body">{{comment.body}}</p>
+        <p class="card=body">- {{comment.author}}, {{format_date comment.date}} </p>
+    {{else}}
+        <form class="form comment-form">
+            <label for="comment">Comment:</label>
+            <input class="form-input" type="text" id="comment"/>
+            <button class="btn btn-primary" type="submit" id="comment-submit-btn" data-post="{{postData.id}}" data-user="{{userId}}">Submit</button>
+        </form>
+    {{/if}}
+</section>
+
+{{else}}
+<a href="/login">You must login first to view the posts</a>
+{{/if}}
+
+<script src="../js/comment.js"></script>

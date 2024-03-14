@@ -1,0 +1,220 @@
+/* Color Variables */
+:root {
+  --primary: #FF5F6D;
+  /* Red */
+  --secondary: #FFE66D;
+  /* Yellow */
+  --tertiary: #6D5AFF;
+  /* Purple */
+  --quatrinary: #E8E8E8;
+  /* Light Grey */
+  --light: #FFFFFF;
+  /* White */
+  --dark: #333333;
+  /* Dark Grey */
+  --error: rgb(228, 46, 1);
+  /* Error Color */
+  --border-radius: 5px;
+  /* Border Radius */
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: var(--quatrinary);
+  /* Set background color */
+}
+
+/* Links Styles */
+a {
+  color: var(--dark);
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+a:visited {
+  color: var(--dark);
+  /* Set visited link color */
+}
+
+/* Header Styles */
+header {
+  text-align: left;
+  background: var(--primary);
+  /* Set header background color */
+  color: var(--light);
+  /* Set header text color */
+  padding: 20px;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+/* Sidebar Styles */
+aside {
+  flex: 0;
+  background-color: var(--secondary);
+  /* Set sidebar background color */
+  padding: 80px;
+  text-align: left;
+  color: var(--dark);
+  /* Set sidebar text color */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  background-color: var(--tertiary);
+  /* Set navigation background color */
+}
+
+nav a {
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--light);
+  /* Set navigation link color */
+}
+
+/* Hover Styles */
+a:hover {
+  text-decoration: underline;
+  /* Underline link on hover */
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+nav a:hover,
+.btn-no-style:hover {
+  color: var(--tertiary);
+  /* Change color on hover */
+  background-color: var(--dark);
+  /* Change background color on hover */
+}
+
+/* Posts Section Styles */
+.posts {
+  width: 100%;
+  flex: 4;
+  flex-direction: column;
+  background-color: var(--light);
+  /* Set background color */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 70%;
+}
+
+.post-info {
+  font-size: small;
+  text-align: right;
+  font-weight: 300;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cards Styles */
+.card {
+  margin: 5px;
+  width: 100%;
+  flex: 0 1 auto;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+  background-color: var(--light);
+  /* Set card background color */
+  color: var(--dark);
+  /* Set card text color */
+  padding: 5px;
+}
+
+.login-card {
+  width: 70%;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.update-card {
+  width: 80%;
+  margin: 0;
+  padding: 5px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 2px;
+  background-color: var(--tertiary);
+  /* Set card background color */
+  color: var(--light);
+  /* Set card text color */
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--light);
+  margin: 0;
+  background-color: var(--tertiary);
+  /* Set card header background color */
+  padding: 0.625rem;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-body {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.posts-name {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px var(--secondary);
+  border: 10px groove var(--light);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+/* Layout Styles */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: center;
+}
