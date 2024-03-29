@@ -1,22 +1,23 @@
 /* Color Variables */
 :root {
-  --primary: #FF5F6D;
-  /* Red */
-  --secondary: #FFE66D;
-  /* Yellow */
-  --tertiary: #6D5AFF;
-  /* Purple */
-  --quatrinary: #E8E8E8;
-  /* Light Grey */
-  --light: #FFFFFF;
-  /* White */
-  --dark: #333333;
-  /* Dark Grey */
-  --error: rgb(228, 46, 1);
-  /* Error Color */
+  --primary: #2ecc71;
+  /* Emerald */
+  --secondary: #3498db;
+  /* Belize Hole */
+  --tertiary: #f1c40f;
+  /* Sun Flower */
+  --quaternary: #e74c3c;
+  /* Alizarin */
+  --light: #ecf0f1;
+  /* Clouds */
+  --dark: #34495e;
+  /* Wet Asphalt */
+  --error: #e67e22;
+  /* Carrot */
   --border-radius: 5px;
   /* Border Radius */
 }
+
 
 /* Body Styles */
 body {

@@ -16,6 +16,7 @@ After signing up and/or logging in, you can:
 * View and comment on posts from other bloggers
 
 ![Screenshot](./assets/ss.png)
+https://infinite-retreat-78041-f7a77362a32e.herokuapp.com
 
 ## License
 
